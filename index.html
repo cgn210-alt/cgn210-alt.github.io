@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>앱 모음</title>
+<meta property="og:title" content="앱 모음">
+<meta property="og:description" content="중종로공동체 · CGN 사내 웹앱 바로가기">
+<style>
+  :root {
+    --bg: #f5f5f4;
+    --card: #ffffff;
+    --text: #1c1917;
+    --sub: #57534e;
+    --line: #e7e5e4;
+    --jjr: #6d28d9;
+    --cgn: #ea580c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1917;
+      --card: #292524;
+      --text: #f5f5f4;
+      --sub: #a8a29e;
+      --line: #44403c;
+      --jjr: #a78bfa;
+      --cgn: #fb923c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.5;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .lead { color: var(--sub); margin: 0 0 32px; font-size: 14px; }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-size: 18px; margin: 0 0 12px; padding-left: 10px;
+    border-left: 4px solid var(--accent);
+  }
+  .jjr { --accent: var(--jjr); }
+  .cgn { --accent: var(--cgn); }
+  h3 { font-size: 13px; color: var(--sub); font-weight: 600; margin: 18px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+  a.card {
+    display: block; padding: 14px 16px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 10px;
+    color: inherit; text-decoration: none;
+  }
+  a.card:hover { border-color: var(--accent); }
+  .name { font-weight: 600; font-size: 15px; }
+  .desc { color: var(--sub); font-size: 13px; margin-top: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>앱 모음</h1>
+  <p class="lead">중종로공동체와 CGN 사내에서 쓰는 웹앱 바로가기입니다.</p>
+
+  <section class="jjr">
+    <h2>중종로공동체</h2>
+
+    <h3>예배 · 기도</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/jjr-sunmoim/sunmoim.html">
+        <div class="name">순예배 주보</div>
+        <div class="desc">순예배 순서와 한 주간의 기도제목</div>
+      </a>
+      <a class="card" href="https://cgn210-alt.github.io/jjr-jonggangye-2026/">
+        <div class="name">기도로 잇고, 예배로 피어나다</div>
+        <div class="desc">상반기 종강예배 &amp; 릴레이 기도</div>
+      </a>
+    </div>
+
+    <h3>조직 · 명단</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/jjr-org/orgchart.html">
+        <div class="name">조직도</div>
+        <div class="desc">공동체 섬김 조직과 다락방 구성</div>
+      </a>
+      <a class="card" href="https://cgn210-alt.github.io/jjr-org/org.html">
+        <div class="name">다락방별 명단</div>
+        <div class="desc">믿음 · 소망 · 사랑 다락방과 순 구성</div>
+      </a>
+    </div>
+
+    <h3>섬김 · 행사</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/jjr-baecharyo/funeral_transport.html">
+        <div class="name">조문 차량 배차표</div>
+        <div class="desc">조문 차량 탑승 배차</div>
+      </a>
+      <a class="card" href="https://cgn210-alt.github.io/jjr-sarabat2026/sarabat.html">
+        <div class="name">2026 사르밧 프로젝트</div>
+        <div class="desc">감사의 쌀 나눔 순별 현황</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="cgn">
+    <h2>CGN 사내</h2>
+
+    <h3>업무 · 행정</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/cgn-parking/">
+        <div class="name">CGN 주차 신청</div>
+        <div class="desc">별관 · 남경 주차 주간 신청</div>
+      </a>
+      <a class="card" href="https://cgn210-alt.github.io/cgn-budget/">
+        <div class="name">2027 경영관리실 예산 총괄</div>
+        <div class="desc">허용 계정 전용</div>
+      </a>
+    </div>
+
+    <h3>사내 안내</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/cgn-apple/">
+        <div class="name">철하네 꿀 부사사과</div>
+        <div class="desc">가격 안내와 주문 계산기</div>
+      </a>
+    </div>
+
+    <h3>콘텐츠</h3>
+    <div class="grid">
+      <a class="card" href="https://cgn210-alt.github.io/nalmada/">
+        <div class="name">날마다 · 퐁당</div>
+        <div class="desc">오늘의 추천 콘텐츠와 말씀</div>
+      </a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
